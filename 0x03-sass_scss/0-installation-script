@@ -1,0 +1,43 @@
+# Installation Steps for SASS
+
+1. **Check for Node.js Installation**
+
+   - Open your terminal and check if Node.js is installed by running:
+     ```bash
+     node -v
+     npm -v
+     ```
+   - If Node.js is not installed, download and install it from [Node.js official website](https://nodejs.org/).
+
+2. **Install SASS Using npm**
+
+   - Run the following command in your terminal to install SASS with a specific version:
+     ```bash
+     npm install sass -v 3.7.4
+     ```
+
+3. **Verify the Installation**
+
+   - Check if SASS is successfully installed by running:
+     ```bash
+     sass --version
+     ```
+   - This should display the installed version of SASS.
+
+4. **Set Up a Test Environment**
+
+   - Create a test directory and navigate into it:
+     ```bash
+     mkdir sass-test
+     cd sass-test
+     ```
+   - Create a `.scss` file to test:
+     ```bash
+     echo "$primary-color: #333; body { color: $primary-color; }" > test.scss
+     ```
+
+5. **Compile the SASS File**
+   - Compile the `.scss` file into `.css` using the following command:
+     ```bash
+     sass test.scss test.css
+     ```
